@@ -5,8 +5,8 @@ VERSION 5.7 ;
 MACRO tt_um_adc_dac_tern_alu
   CLASS BLOCK ;
   FOREIGN tt_um_adc_dac_tern_alu ;
-  ORIGIN -1.000 0.000 ;
-  SIZE 151.930 BY 225.760 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 161.000 BY 225.760 ;
   PIN clk
     DIRECTION INPUT ;
     USE SIGNAL ;
@@ -36,8 +36,7 @@ MACRO tt_um_adc_dac_tern_alu
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 151.490 0.480 152.930 1.740 ;
-        RECT 151.810 0.000 152.710 0.480 ;
+        RECT 151.810 0.000 152.710 1.000 ;
     END
   END ua[0]
   PIN ua[1]
@@ -77,7 +76,7 @@ MACRO tt_um_adc_dac_tern_alu
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 55.210 0.000 56.110 1.020 ;
+        RECT 55.210 0.000 56.110 1.000 ;
     END
   END ua[5]
   PIN ua[6]
@@ -85,7 +84,7 @@ MACRO tt_um_adc_dac_tern_alu
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 35.890 0.000 36.790 1.020 ;
+        RECT 35.890 0.000 36.790 1.000 ;
     END
   END ua[6]
   PIN ua[7]
@@ -93,7 +92,7 @@ MACRO tt_um_adc_dac_tern_alu
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 16.570 0.000 17.470 1.020 ;
+        RECT 16.570 0.000 17.470 1.000 ;
     END
   END ua[7]
   PIN ui_in[0]
@@ -229,34 +228,65 @@ MACRO tt_um_adc_dac_tern_alu
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 41.710 225.480 42.010 225.760 ;
-        RECT 44.470 225.480 44.770 225.760 ;
-        RECT 47.230 225.480 47.530 225.760 ;
-        RECT 49.990 225.480 50.290 225.760 ;
-        RECT 41.710 224.920 50.290 225.480 ;
-        RECT 41.710 224.760 42.010 224.920 ;
-        RECT 44.470 224.760 44.770 224.920 ;
-        RECT 45.610 224.910 46.170 224.920 ;
-        RECT 47.230 224.760 47.530 224.920 ;
-        RECT 49.990 224.760 50.290 224.920 ;
+        RECT 49.990 224.760 50.290 225.760 ;
     END
   END uio_oe[0]
+  PIN uio_oe[1]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met4 ;
+        RECT 47.230 224.760 47.530 225.760 ;
+    END
+  END uio_oe[1]
+  PIN uio_oe[2]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met4 ;
+        RECT 44.470 224.760 44.770 225.760 ;
+    END
+  END uio_oe[2]
+  PIN uio_oe[3]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met4 ;
+        RECT 41.710 224.760 42.010 225.760 ;
+    END
+  END uio_oe[3]
   PIN uio_oe[4]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 30.670 225.530 30.970 225.760 ;
-        RECT 33.430 225.530 33.730 225.760 ;
-        RECT 36.190 225.530 36.490 225.760 ;
-        RECT 38.950 225.530 39.250 225.760 ;
-        RECT 30.640 224.970 39.250 225.530 ;
-        RECT 30.670 224.760 30.970 224.970 ;
-        RECT 33.430 224.760 33.730 224.970 ;
-        RECT 36.190 224.760 36.490 224.970 ;
-        RECT 38.950 224.760 39.250 224.970 ;
+        RECT 38.950 224.760 39.250 225.760 ;
     END
   END uio_oe[4]
+  PIN uio_oe[5]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met4 ;
+        RECT 36.190 224.760 36.490 225.760 ;
+    END
+  END uio_oe[5]
+  PIN uio_oe[6]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met4 ;
+        RECT 33.430 224.760 33.730 225.760 ;
+    END
+  END uio_oe[6]
+  PIN uio_oe[7]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met4 ;
+        RECT 30.670 224.760 30.970 225.760 ;
+    END
+  END uio_oe[7]
   PIN uio_out[0]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
@@ -294,25 +324,39 @@ MACRO tt_um_adc_dac_tern_alu
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 52.750 225.140 53.050 225.760 ;
-        RECT 55.510 225.140 55.810 225.760 ;
-        RECT 58.270 225.140 58.570 225.760 ;
-        RECT 61.030 225.140 61.330 225.760 ;
-        RECT 52.750 224.840 61.330 225.140 ;
-        RECT 52.750 224.560 53.050 224.840 ;
-        RECT 55.510 224.760 55.810 224.840 ;
-        RECT 58.270 224.760 58.570 224.840 ;
-        RECT 61.030 224.760 61.330 224.840 ;
+        RECT 61.030 224.760 61.330 225.760 ;
     END
   END uio_out[4]
+  PIN uio_out[5]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met4 ;
+        RECT 58.270 224.760 58.570 225.760 ;
+    END
+  END uio_out[5]
+  PIN uio_out[6]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met4 ;
+        RECT 55.510 224.760 55.810 225.760 ;
+    END
+  END uio_out[6]
+  PIN uio_out[7]
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met4 ;
+        RECT 52.750 224.760 53.050 225.760 ;
+    END
+  END uio_out[7]
   PIN uo_out[0]
     DIRECTION OUTPUT ;
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 94.150 225.145 94.450 225.760 ;
-        RECT 94.150 224.815 94.455 225.145 ;
-        RECT 94.150 224.760 94.450 224.815 ;
+        RECT 94.150 224.760 94.450 225.760 ;
     END
   END uo_out[0]
   PIN uo_out[1]
@@ -376,10 +420,7 @@ MACRO tt_um_adc_dac_tern_alu
     USE POWER ;
     PORT
       LAYER met4 ;
-        RECT 1.650 220.760 2.210 220.770 ;
-        RECT 1.000 23.100 3.000 220.760 ;
-        RECT 1.000 19.330 3.010 23.100 ;
-        RECT 1.000 5.000 3.000 19.330 ;
+        RECT 1.000 5.000 3.000 220.760 ;
     END
   END VDPWR
   PIN VGND
@@ -387,13 +428,35 @@ MACRO tt_um_adc_dac_tern_alu
     USE GROUND ;
     PORT
       LAYER met4 ;
-        RECT 4.000 220.740 6.000 220.760 ;
-        RECT 4.000 220.440 6.020 220.740 ;
-        RECT 4.000 213.245 6.000 220.440 ;
-        RECT 4.000 212.060 6.010 213.245 ;
-        RECT 4.000 5.000 6.000 212.060 ;
+        RECT 4.000 5.000 6.000 220.760 ;
     END
   END VGND
+  OBS
+      LAYER met4 ;
+        RECT 30.640 224.970 30.670 225.530 ;
+        RECT 30.970 224.970 33.430 225.530 ;
+        RECT 33.730 224.970 36.190 225.530 ;
+        RECT 36.490 224.970 38.950 225.530 ;
+        RECT 42.010 224.920 44.470 225.480 ;
+        RECT 44.770 224.920 47.230 225.480 ;
+        RECT 47.530 224.920 49.990 225.480 ;
+        RECT 45.610 224.910 46.170 224.920 ;
+        RECT 53.050 224.840 55.510 225.140 ;
+        RECT 55.810 224.840 58.270 225.140 ;
+        RECT 58.570 224.840 61.030 225.140 ;
+        RECT 94.450 224.815 94.455 225.145 ;
+        RECT 52.750 224.560 53.050 224.760 ;
+        RECT 1.650 220.760 2.210 220.770 ;
+        RECT 6.000 220.440 6.020 220.740 ;
+        RECT 6.000 212.060 6.010 213.245 ;
+        RECT 3.000 19.330 3.010 23.100 ;
+        RECT 16.570 1.000 17.470 1.020 ;
+        RECT 35.890 1.000 36.790 1.020 ;
+        RECT 55.210 1.000 56.110 1.020 ;
+        RECT 151.490 1.000 152.930 1.740 ;
+        RECT 151.490 0.480 151.810 1.000 ;
+        RECT 152.710 0.480 152.930 1.000 ;
+  END
 END tt_um_adc_dac_tern_alu
 END LIBRARY
 
