@@ -1,0 +1,17 @@
+** sch_path: /home/ttuser/Documents/adc_dac_ter_alu/src/xschem/STI.sch
+.subckt STI VDD IN VSS O_STI O_STI_NR
+*.PININFO VDD:I IN:I VSS:I O_STI:O O_STI_NR:O
+XM5 net2 IN VDD VDD sky130_fd_pr__pfet_01v8_lvt L=0.35 W=5 nf=1 m=1
+XM3 net2 IN VSS VSS sky130_fd_pr__nfet_g5v0d16v0 L=2 W=5 nf=1 m=1
+XR3 O_STI net2 VSS sky130_fd_pr__res_xhigh_po_0p69 L=50 mult=1 m=1
+XR1 net1 O_STI VSS sky130_fd_pr__res_xhigh_po_0p69 L=50 mult=1 m=1
+XM4 net1 IN VSS VSS sky130_fd_pr__nfet_01v8_lvt L=0.15 W=5 nf=1 m=1
+XM6 net1 IN VDD VDD sky130_fd_pr__pfet_g5v0d16v0 L=0.66 W=5 nf=1 m=1
+XM11 net3 IN VSS VSS sky130_fd_pr__nfet_01v8_lvt L=0.2 W=80 nf=1 m=1
+XM2 net3 IN VDD VDD sky130_fd_pr__pfet_g5v0d16v0 L=0.7 W=5.0 nf=1 m=1
+XM12 O_STI_NR VSS net4 net4 sky130_fd_pr__pfet_g5v0d16v0 L=4.3 W=10.8 nf=1 m=1
+XM13 net4 IN VSS VSS sky130_fd_pr__nfet_g5v0d16v0 L=3.5 W=10 nf=1 m=1
+XM14 net4 IN VDD VDD sky130_fd_pr__pfet_01v8_lvt L=0.5 W=120 nf=1 m=1
+XM7 O_STI_NR VDD net3 net3 sky130_fd_pr__nfet_g5v0d16v0 L=10.5 W=6.3 nf=1 m=1
+.ends
+.end

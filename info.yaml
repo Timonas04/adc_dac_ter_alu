@@ -3,8 +3,8 @@ project:
   title:        "adc_dac_BCT_addr_ALU_STI"      # Project title
   author:       "Stven Bos, Timonas Juonys"      # Your name
   discord:      "steveb, bestTim"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "adc, dac"      # One line description of what your project does
-  language:     "Analog" # other examples include Verilog, Amaranth, VHDL, etc
+  description:  "BCD adder, BCD alu, 4 bit flash adc"      # One line description of what your project does
+  language:     "VHDL, verilog, Analog" # other examples include Verilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
@@ -19,10 +19,14 @@ project:
 
   # List your project's source files here. Source files must be in ./src and you must list each source file separately, one per line:
   source_files:        
-    - "project.v"
+    - "tt_um_adc_dac_tern_alu.mag" # magic file that got submited
+    - "main.vhd" # top file of digital block. Its translated to verilog -> main_ver.v
+    - "c_lookahead-3-base_singlefile" # BCD adder
+    - "c_tt_um_rebel2_balanced_ternary_ALU_singlefile" # BCD ALU
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
+# see main.vhd for pinouts
 pinout:
   # Inputs
   ui[0]: ""
